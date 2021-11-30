@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xml>
+	<settings>
+    		<CNNString>Data source=ana\sqlexpress;Initial Catalog=farma;User ID=test;Password=0000</CNNString>
+ 		<PrnString>E:\projekti\Farma\Farma\bin\Debug\izvestaji</PrnString>
+	</settings>
+</xml>

@@ -1,0 +1,328 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="_1_Arrow_Down" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1 Arrow Down.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_1_Arrow_Up" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1 Arrow Up.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_3_Down" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3 Down.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_3_Left" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3 Left.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_3_Up" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3 Up.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="configuration_512" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\configuration_512.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Control_Panel_Alt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Control Panel Alt.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dossiers_Config_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dossiers Config'.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dossiers_Panneau_de_configuration" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dossiers Panneau de configuration.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dossiers_recherches" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dossiers recherches.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dossiers_utilisateurs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dossiers utilisateurs.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="File" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\File.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Files_text" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Files-text.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Folder_Blue_Software" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Folder Blue Software.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Folder_Orange" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Folder Orange.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Folder_Yellow_Software" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Folder Yellow Software.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Font_File_Alt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Font File Alt.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LaST__Cobalt__Books" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LaST (Cobalt) Books.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LaST__Cobalt__Delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LaST (Cobalt) Delete.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LaST__Cobalt__Find" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LaST (Cobalt) Find.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LaST__Cobalt__Floppy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LaST (Cobalt) Floppy.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LaST__Cobalt__Folder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LaST (Cobalt) Folder.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LaST__Cobalt__Library_Folder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LaST (Cobalt) Library Folder.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LaST__Cobalt__Open_Folder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LaST (Cobalt) Open Folder.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LaST__Cobalt__Printers" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LaST (Cobalt) Printers.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LaST__Cobalt__Text_File" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LaST (Cobalt) Text File.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logoff" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logoff.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="msn_512" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\msn_512.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pan_setting" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pan setting.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="reload" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\reload.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="reload1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\reload1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Right" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Right.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="text_add" xml:space="preserve">
+    <value> - unos</value>
+  </data>
+  <data name="text_artikli_promet" xml:space="preserve">
+    <value>: promet artikla</value>
+  </data>
+  <data name="text_brisanje" xml:space="preserve">
+    <value>Da li ste sigurno da želite da izbrišete zapis sa šifrom</value>
+  </data>
+  <data name="text_dnevni_promet" xml:space="preserve">
+    <value>: dnevni promet</value>
+  </data>
+  <data name="text_edit" xml:space="preserve">
+    <value>- ažuriranje</value>
+  </data>
+  <data name="text_fin_analitika" xml:space="preserve">
+    <value>: analitika</value>
+  </data>
+  <data name="text_fin_kartice" xml:space="preserve">
+    <value>: kartice</value>
+  </data>
+  <data name="text_greska" xml:space="preserve">
+    <value>Došlo je do greške prilikom izvršenja naredbe.</value>
+  </data>
+  <data name="text_greska1" xml:space="preserve">
+    <value>Došlo je do greške. Zahtevana procedura nije izvršena.</value>
+  </data>
+  <data name="text_int_dost_izlaz" xml:space="preserve">
+    <value>: intrrna dostavnica izlaz</value>
+  </data>
+  <data name="text_int_dost_ulaz" xml:space="preserve">
+    <value>: intrrna dostavnica ulaz</value>
+  </data>
+  <data name="text_int_prenos" xml:space="preserve">
+    <value>: intrrni prenos</value>
+  </data>
+  <data name="text_kalkulacije" xml:space="preserve">
+    <value>: kalkulacije</value>
+  </data>
+  <data name="text_konta" xml:space="preserve">
+    <value>: kontni okvir</value>
+  </data>
+  <data name="text_lab_dnevnik" xml:space="preserve">
+    <value>: laboratorijski dnevnik</value>
+  </data>
+  <data name="text_lager" xml:space="preserve">
+    <value>: lager lista</value>
+  </data>
+  <data name="text_mip" xml:space="preserve">
+    <value>: magacinski interni prenos</value>
+  </data>
+  <data name="text_nalog" xml:space="preserve">
+    <value>: nalog</value>
+  </data>
+  <data name="text_naselja" xml:space="preserve">
+    <value>: naselja</value>
+  </data>
+  <data name="text_nivelacija" xml:space="preserve">
+    <value>: nivelacija</value>
+  </data>
+  <data name="text_obrada_podataka" xml:space="preserve">
+    <value>: OBRADAPODA PODATAKA</value>
+  </data>
+  <data name="text_oj" xml:space="preserve">
+    <value>: organizacione jedinice</value>
+  </data>
+  <data name="text_otvorene_stavke" xml:space="preserve">
+    <value>: otvorene stavke</value>
+  </data>
+  <data name="text_partneri" xml:space="preserve">
+    <value>: partneri</value>
+  </data>
+  <data name="text_povezana_konta" xml:space="preserve">
+    <value>: povezana konta</value>
+  </data>
+  <data name="text_prazan_zapis" xml:space="preserve">
+    <value>Nije moguće uneti prazan zapis.</value>
+  </data>
+  <data name="text_print" xml:space="preserve">
+    <value> - štampanje</value>
+  </data>
+  <data name="text_proizvodnja" xml:space="preserve">
+    <value>: PROIZVODNJA</value>
+  </data>
+  <data name="text_robno" xml:space="preserve">
+    <value>: ROBNO</value>
+  </data>
+  <data name="text_sastavnice" xml:space="preserve">
+    <value>: sastavnice</value>
+  </data>
+  <data name="text_search" xml:space="preserve">
+    <value> - pretraga</value>
+  </data>
+  <data name="text_spec_izlaz" xml:space="preserve">
+    <value>: izlaz</value>
+  </data>
+  <data name="text_spec_ulaz" xml:space="preserve">
+    <value>: ulaza</value>
+  </data>
+  <data name="text_specifikacije" xml:space="preserve">
+    <value>: specifikacije</value>
+  </data>
+  <data name="text_tebovanje" xml:space="preserve">
+    <value>: trebovanje</value>
+  </data>
+  <data name="text_upit_storno" xml:space="preserve">
+    <value>Da li ste sigurni da želite da izvršite storniranje? Nakon ove operacije nalog će biti proknjižen i zaključan.</value>
+  </data>
+  <data name="Themes_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes 2.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

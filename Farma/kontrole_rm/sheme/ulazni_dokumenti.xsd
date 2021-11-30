@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ulazni_dokumenti" targetNamespace="http://tempuri.org/ulazni_dokumenti.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/ulazni_dokumenti.xsd" xmlns:mstns="http://tempuri.org/ulazni_dokumenti.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:group name="dokument">
+    <xs:sequence>
+      <xs:element name="Tabela" type="xs:string" />
+      <xs:element name="KonamdTekst" type="xs:string" />
+      <xs:element name="Broj_kolona" type="xs:int" />
+      <xs:element name="dokumenta_id" type="xs:int" />
+      <xs:element name="kotrole" type="xs:string" />
+    </xs:sequence>
+  </xs:group>
+</xs:schema>

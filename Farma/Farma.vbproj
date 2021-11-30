@@ -1,0 +1,2992 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3657BDB3-2849-476E-BE21-5BD4DF3D8B1E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Farma.My.MyApplication</StartupObject>
+    <RootNamespace>Farma</RootNamespace>
+    <AssemblyName>Farma</AssemblyName>
+    <MyType>WindowsForms</MyType>
+    <ApplicationIcon>Resources\Folder Orange.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Farma.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Farma.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="adodb, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Interop.Microsoft.Office.Interop.Word, Version=8.4.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="appinit.vb" />
+    <Compile Include="appinitcls.vb" />
+    <Compile Include="DataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.vb">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="forme\frmArtikl_pick.Designer.vb">
+      <DependentUpon>frmArtikl_pick.vb</DependentUpon>
+    </Compile>
+    <Compile Include="forme\frmArtikl_pick.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="izvestaji\app\rptJM.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptJM.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="izvestaji\finansijsko\rptAnalitika_kartica.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptAnalitika_kartica.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="izvestaji\finansijsko\rptAnalitika_kumulativ.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptAnalitika_kumulativ.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="izvestaji\finansijsko\rptAnalitika_po_kontima - analitika.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptAnalitika_po_kontima - analitika.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="izvestaji\finansijsko\rptAnalitika_po_kontima - sintetika.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptAnalitika_po_kontima - sintetika.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="izvestaji\finansijsko\rptBruto_bilans - analitika.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptBruto_bilans - analitika.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="izvestaji\finansijsko\rptBruto_bilans - sintetikla.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptBruto_bilans - sintetikla.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="izvestaji\finansijsko\rptOtv_st_izvod.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptOtv_st_izvod.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="izvestaji\finansijsko\rptOtv_st_pregled_otvorenih.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptOtv_st_pregled_otvorenih.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="izvestaji\finansijsko\rptOtv_st_pregled_zatvorenih.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptOtv_st_pregled_zatvorenih.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="izvestaji\finansijsko\rptOtv_st_zahtev.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptOtv_st_zahtev.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="izvestaji\finansijsko\rptPov_konta_pregled_otvorenih.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptPov_konta_pregled_otvorenih.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="izvestaji\proizvodnja\rptLab_dn.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptLab_dn.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="izvestaji\proizvodnja\rptLab_dn_izrada.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptLab_dn_izrada.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="izvestaji\proizvodnja\rptLab_dn_rekapit.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptLab_dn_rekapit.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="izvestaji\proizvodnja\rptLab_dn_trebovanje.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptLab_dn_trebovanje.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="izvestaji\proizvodnja\rptSastavnica.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptSastavnica.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="izvestaji\rm\rptAnaliza_lagera.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptAnaliza_lagera.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="izvestaji\finansijsko\rptGlavna_knjiga_kartica.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptGlavna_knjiga_kartica.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="izvestaji\rm\rptInterniPrenos.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptInterniPrenos.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="izvestaji\app\rptKontniPlan.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptKontniPlan.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="izvestaji\rm\rptIzlazni_Dokument.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptIzlazni_Dokument.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="izvestaji\rm\rptMagInterniPrenos.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptMagInterniPrenos.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="izvestaji\rm\rptDnevni_Promet-kumulat.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptDnevni_Promet-kumulat.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="izvestaji\rm\rptDnevni_Promet.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptDnevni_Promet.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="izvestaji\app\rptFO.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptFO.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="izvestaji\app\rptGrupeArt.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptGrupeArt.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="izvestaji\rm\rptLager.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptLager.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="izvestaji\app\rptNaselja.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptNaselja.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="izvestaji\rm\rptPopis.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptPopis.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="izvestaji\rm\rptPovracaj_robe.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptPovracaj_robe.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="izvestaji\rm\rptPopisnaLista.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptPopisnaLista.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="izvestaji\rm\rptPromet_art_detaljno.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptPromet_art_detaljno.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="izvestaji\rm\rptPromet_art_kumulativ.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptPromet_art_kumulativ.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="izvestaji\rm\rptPromet_mag_stanje.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptPromet_mag_stanje.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="izvestaji\rm\rptPromet_neslaganje.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptPromet_neslaganje.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="izvestaji\rm\rptAnaliza_izlaz.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptAnaliza_izlaz.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="izvestaji\rm\rptSpecifikacija_izlaz.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptSpecifikacija_izlaz.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="izvestaji\rm\rptSpecifikacija_lager.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptSpecifikacija_lager.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="izvestaji\rm\rptSpecifikacija_nivelacija.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptSpecifikacija_nivelacija.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="izvestaji\rm\rptAnaliza_ulaz.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptAnaliza_ulaz.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="izvestaji\rm\rptSpecifikacija_ulaz.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptSpecifikacija_ulaz.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="izvestaji\rm\rptTrebovanje.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptTrebovanje.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="kontrole_app\cntArtikli_search.Designer.vb">
+      <DependentUpon>cntArtikli_search.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_app\cntArtikli_search.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_app\cntFO.Designer.vb">
+      <DependentUpon>cntFO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_app\cntFO.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_app\cntFO_add.Designer.vb">
+      <DependentUpon>cntFO_add.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_app\cntFO_add.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_app\cntFO_edit.Designer.vb">
+      <DependentUpon>cntFO_edit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_app\cntFO_edit.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_app\cntFO_search.Designer.vb">
+      <DependentUpon>cntFO_search.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_app\cntFO_search.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_app\cntGenericko_ime_add.Designer.vb">
+      <DependentUpon>cntGenericko_ime_add.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_app\cntGenericko_ime_add.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_app\cntGenericko_ime_edit.Designer.vb">
+      <DependentUpon>cntGenericko_ime_edit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_app\cntGenericko_ime_edit.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_app\cntGrupeArt_add.Designer.vb">
+      <DependentUpon>cntGrupeArt_add.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_app\cntGrupeArt_add.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_app\cntGrupeArt_edit.Designer.vb">
+      <DependentUpon>cntGrupeArt_edit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_app\cntGrupeArt_edit.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_app\cntGrupeArt_search.Designer.vb">
+      <DependentUpon>cntGrupeArt_search.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_app\cntGrupeArt_search.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_app\cntJKLEdit.Designer.vb">
+      <DependentUpon>cntJKLEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_app\cntJKLEdit.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_app\cntJKLUnos.Designer.vb">
+      <DependentUpon>cntJKLUnos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_app\cntJKLUnos.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_app\cntJM.Designer.vb">
+      <DependentUpon>cntJM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_app\cntJM.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_app\cntJM_add.Designer.vb">
+      <DependentUpon>cntJM_add.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_app\cntJM_add.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_app\cntJM_edit.Designer.vb">
+      <DependentUpon>cntJM_edit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_app\cntJM_edit.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_app\cntJM_search.Designer.vb">
+      <DependentUpon>cntJM_search.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_app\cntJM_search.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_app\cntKontniPlan_add.Designer.vb">
+      <DependentUpon>cntKontniPlan_add.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_app\cntKontniPlan_add.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_app\cntKontniPlan_edit.Designer.vb">
+      <DependentUpon>cntKontniPlan_edit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_app\cntKontniPlan_edit.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_app\cntKontniPlan_search.Designer.vb">
+      <DependentUpon>cntKontniPlan_search.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_app\cntKontniPlan_search.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_app\cntNaselja_add.Designer.vb">
+      <DependentUpon>cntNaselja_add.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_app\cntNaselja_add.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_app\cntNaselja_edit.Designer.vb">
+      <DependentUpon>cntNaselja_edit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_app\cntNaselja_edit.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_app\cntNaselja_search.Designer.vb">
+      <DependentUpon>cntNaselja_search.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_app\cntNaselja_search.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_app\cntOJ_add.Designer.vb">
+      <DependentUpon>cntOJ_add.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_app\cntOJ_add.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_app\cntOJ_edit.Designer.vb">
+      <DependentUpon>cntOJ_edit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_app\cntOJ_edit.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_app\cntOJ_sreach.Designer.vb">
+      <DependentUpon>cntOJ_sreach.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_app\cntOJ_sreach.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_app\cntPartneri_add.Designer.vb">
+      <DependentUpon>cntPartneri_add.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_app\cntPartneri_add.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_app\cntPartneri_edit.Designer.vb">
+      <DependentUpon>cntPartneri_edit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_app\cntPartneri_edit.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_app\cntPartneri_sreach.Designer.vb">
+      <DependentUpon>cntPartneri_sreach.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_app\cntPartneri_sreach.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_app\cntPDV_add.Designer.vb">
+      <DependentUpon>cntPDV_add.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_app\cntPDV_add.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_app\cntPDV_edit.Designer.vb">
+      <DependentUpon>cntPDV_edit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_app\cntPDV_edit.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_app\cntPDV_search.Designer.vb">
+      <DependentUpon>cntPDV_search.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_app\cntPDV_search.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_fn\cntAnalitika_pregled_po_kontima.Designer.vb">
+      <DependentUpon>cntAnalitika_pregled_po_kontima.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_fn\cntAnalitika_pregled_po_kontima.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_fn\cntBruto_bilans.Designer.vb">
+      <DependentUpon>cntBruto_bilans.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_fn\cntBruto_bilans.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_fn\cntFin_izvestaji.Designer.vb">
+      <DependentUpon>cntFin_izvestaji.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_fn\cntFin_izvestaji.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_fn\cntAnalitika_kartica_kup.Designer.vb">
+      <DependentUpon>cntAnalitika_kartica_kup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_fn\cntAnalitika_kartica_kup.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_fn\cntAnalitika_kartica_oj.Designer.vb">
+      <DependentUpon>cntAnalitika_kartica_oj.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_fn\cntAnalitika_kartica_oj.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_fn\cntAnalitika_kartica_partneri.Designer.vb">
+      <DependentUpon>cntAnalitika_kartica_partneri.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_fn\cntAnalitika_kartica_partneri.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_fn\cntAnalitika_kumulativ.Designer.vb">
+      <DependentUpon>cntAnalitika_kumulativ.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_fn\cntAnalitika_kumulativ.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_fn\cntKarticaGKnjige.Designer.vb">
+      <DependentUpon>cntKarticaGKnjige.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_fn\cntKarticaGKnjige.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_fn\cntOtvorene_stavke_ispravke.Designer.vb">
+      <DependentUpon>cntOtvorene_stavke_ispravke.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_fn\cntOtvorene_stavke_ispravke.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_fn\cntPovezana_konta.Designer.vb">
+      <DependentUpon>cntPovezana_konta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_fn\cntPovezana_konta.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_fn\cntPovezana_konta_ispravke.Designer.vb">
+      <DependentUpon>cntPovezana_konta_ispravke.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_fn\cntPovezana_konta_ispravke.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_meni\cntMeniProizvodnja.Designer.vb">
+      <DependentUpon>cntMeniProizvodnja.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_meni\cntMeniProizvodnja.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_proizvodnja\clsProizvodnja.vb" />
+    <Compile Include="kontrole_proizvodnja\cntLab_Dn.Designer.vb">
+      <DependentUpon>cntLab_Dn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_proizvodnja\cntLab_Dn.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_proizvodnja\cntLab_Dn_add.Designer.vb">
+      <DependentUpon>cntLab_Dn_add.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_proizvodnja\cntLab_Dn_add.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_proizvodnja\cntLab_Dn_edit.Designer.vb">
+      <DependentUpon>cntLab_Dn_edit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_proizvodnja\cntLab_Dn_edit.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_proizvodnja\cntlab_Dn_izvestaji.Designer.vb">
+      <DependentUpon>cntlab_Dn_izvestaji.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_proizvodnja\cntlab_Dn_izvestaji.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_proizvodnja\cntLab_Dn_search.Designer.vb">
+      <DependentUpon>cntLab_Dn_search.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_proizvodnja\cntLab_Dn_search.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_proizvodnja\cntSastavnica.Designer.vb">
+      <DependentUpon>cntSastavnica.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_proizvodnja\cntSastavnica.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_proizvodnja\cntSastavnica_add.Designer.vb">
+      <DependentUpon>cntSastavnica_add.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_proizvodnja\cntSastavnica_add.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_proizvodnja\cntSastavnica_edit.Designer.vb">
+      <DependentUpon>cntSastavnica_edit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_proizvodnja\cntSastavnica_edit.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_proizvodnja\cntSastavnica_search.Designer.vb">
+      <DependentUpon>cntSastavnica_search.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_proizvodnja\cntSastavnica_search.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_rm\izlazni_dokumenti\cntRobno_izlaz.Designer.vb">
+      <DependentUpon>cntRobno_izlaz.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_rm\izlazni_dokumenti\cntRobno_izlaz.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_rm\izlazni_dokumenti\cntRobno_izlaz_add.Designer.vb">
+      <DependentUpon>cntRobno_izlaz_add.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_rm\izlazni_dokumenti\cntRobno_izlaz_add.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_rm\izlazni_dokumenti\cntRobno_izlaz_edit.Designer.vb">
+      <DependentUpon>cntRobno_izlaz_edit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_rm\izlazni_dokumenti\cntRobno_izlaz_edit.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_rm\izlazni_dokumenti\cntRobno_izlaz_search.Designer.vb">
+      <DependentUpon>cntRobno_izlaz_search.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_rm\izlazni_dokumenti\cntRobno_izlaz_search.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_rm\izlazni_dokumenti\staro\cntKnjizOdobIzlaz_print.Designer.vb">
+      <DependentUpon>cntKnjizOdobIzlaz_print.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_rm\izlazni_dokumenti\staro\cntKnjizOdobIzlaz_print.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_rm\izlazni_dokumenti\staro\cntKnjizZaduzIzlaz.Designer.vb">
+      <DependentUpon>cntKnjizZaduzIzlaz.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_rm\izlazni_dokumenti\staro\cntKnjizZaduzIzlaz.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_rm\izlazni_dokumenti\staro\cntKnjizZaduzIzlaz_edit.Designer.vb">
+      <DependentUpon>cntKnjizZaduzIzlaz_edit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_rm\izlazni_dokumenti\staro\cntKnjizZaduzIzlaz_edit.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_rm\ulazni_dokumenti\cntRobno_ulaz_search.Designer.vb">
+      <DependentUpon>cntRobno_ulaz_search.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_rm\ulazni_dokumenti\cntRobno_ulaz_search.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_rm\ulazni_dokumenti\cntRobno_ulaz_add.Designer.vb">
+      <DependentUpon>cntRobno_ulaz_add.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_rm\ulazni_dokumenti\cntRobno_ulaz_add.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_rm\clsRobno.vb" />
+    <Compile Include="kontrole_rm\ulazni_dokumenti\cntRobno_ulaz.Designer.vb">
+      <DependentUpon>cntRobno_ulaz.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_rm\ulazni_dokumenti\cntRobno_ulaz.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_rm\ulazni_dokumenti\cntRobno_ulaz_edit.Designer.vb">
+      <DependentUpon>cntRobno_ulaz_edit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_rm\ulazni_dokumenti\cntRobno_ulaz_edit.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_rm\ulazni_dokumenti\staro\cntMagIntPrenos.Designer.vb">
+      <DependentUpon>cntMagIntPrenos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_rm\ulazni_dokumenti\staro\cntMagIntPrenos.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_rm\ulazni_dokumenti\staro\cntMagIntPrenos_edit.Designer.vb">
+      <DependentUpon>cntMagIntPrenos_edit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_rm\ulazni_dokumenti\staro\cntMagIntPrenos_edit.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_rm\ulazni_dokumenti\staro\cntMagIntPrenos_search.Designer.vb">
+      <DependentUpon>cntMagIntPrenos_search.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_rm\ulazni_dokumenti\staro\cntMagIntPrenos_search.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_rm\ulazni_dokumenti\staro\cntNivelacija_add.Designer.vb">
+      <DependentUpon>cntNivelacija_add.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_rm\ulazni_dokumenti\staro\cntNivelacija_add.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_rm\ulazni_dokumenti\staro\cntNivelacija_print.Designer.vb">
+      <DependentUpon>cntNivelacija_print.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_rm\ulazni_dokumenti\staro\cntNivelacija_print.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_rm\ulazni_dokumenti\staro\cntPovracaj_roba.Designer.vb">
+      <DependentUpon>cntPovracaj_roba.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_rm\ulazni_dokumenti\staro\cntPovracaj_roba.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_rm\ulazni_dokumenti\staro\cntPovracaj_roba_edit.Designer.vb">
+      <DependentUpon>cntPovracaj_roba_edit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_rm\ulazni_dokumenti\staro\cntPovracaj_roba_edit.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.vb">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mFunk_proizvodnja.vb" />
+    <Compile Include="tmp\cntKartice_po_analititici.Designer.vb">
+      <DependentUpon>cntKartice_po_analititici.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tmp\cntKartice_po_analititici.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_fn\cntNalog.designer.vb">
+      <DependentUpon>cntNalog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_fn\cntNalog.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_fn\cntNalog_add.Designer.vb">
+      <DependentUpon>cntNalog_add.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_fn\cntNalog_add.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_fn\cntNalog_edit.Designer.vb">
+      <DependentUpon>cntNalog_edit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_fn\cntNalog_edit.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_fn\cntNalog_print.Designer.vb">
+      <DependentUpon>cntNalog_print.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_fn\cntNalog_print.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_fn\cntNalog_search.Designer.vb">
+      <DependentUpon>cntNalog_search.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_fn\cntNalog_search.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_fn\cntNalog_storno.Designer.vb">
+      <DependentUpon>cntNalog_storno.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_fn\cntNalog_storno.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_fn\cntNalozi_staro.designer.vb">
+      <DependentUpon>cntNalozi_staro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_fn\cntNalozi_staro.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_meni\cntMeniIzvestaji.Designer.vb">
+      <DependentUpon>cntMeniIzvestaji.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_meni\cntMeniIzvestaji.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_meni\cntMeniObrada_Izlaz.Designer.vb">
+      <DependentUpon>cntMeniObrada_Izlaz.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_meni\cntMeniObrada_Izlaz.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_meni\cntMeniObrada_Ostalo.Designer.vb">
+      <DependentUpon>cntMeniObrada_Ostalo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_meni\cntMeniObrada_Ostalo.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_fn\cntOtvorene_stavke.Designer.vb">
+      <DependentUpon>cntOtvorene_stavke.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_fn\cntOtvorene_stavke.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_rm\cntAnaliza.Designer.vb">
+      <DependentUpon>cntAnaliza.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_rm\cntAnaliza.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_rm\cntAnaliza_lagera.Designer.vb">
+      <DependentUpon>cntAnaliza_lagera.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_rm\cntAnaliza_lagera.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_rm\cntIzvestaji.Designer.vb">
+      <DependentUpon>cntIzvestaji.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_rm\cntIzvestaji.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_rm\cntIzvestaji_kartica.Designer.vb">
+      <DependentUpon>cntIzvestaji_kartica.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_rm\cntIzvestaji_kartica.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_rm\cntInterniPrenos.Designer.vb">
+      <DependentUpon>cntInterniPrenos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_rm\cntInterniPrenos.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_rm\cntInterniPrenos_add.Designer.vb">
+      <DependentUpon>cntInterniPrenos_add.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_rm\cntInterniPrenos_add.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_rm\cntInterniPrenos_edit.Designer.vb">
+      <DependentUpon>cntInterniPrenos_edit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_rm\cntInterniPrenos_edit.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_rm\cntInterniPrenos_print.Designer.vb">
+      <DependentUpon>cntInterniPrenos_print.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_rm\cntInterniPrenos_print.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_rm\cntInterniPrenos_search.Designer.vb">
+      <DependentUpon>cntInterniPrenos_search.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_rm\cntInterniPrenos_search.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_rm\cntIzvestaji_neslaganja.Designer.vb">
+      <DependentUpon>cntIzvestaji_neslaganja.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_rm\cntIzvestaji_neslaganja.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_rm\cntIzvestaji_stanje.Designer.vb">
+      <DependentUpon>cntIzvestaji_stanje.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_rm\cntIzvestaji_stanje.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_rm\cntLista.designer.vb">
+      <DependentUpon>cntLista.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_rm\cntLista.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_rm\ulazni_dokumenti\staro\cntMagIntPrenos_add.Designer.vb">
+      <DependentUpon>cntMagIntPrenos_add.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_rm\ulazni_dokumenti\staro\cntMagIntPrenos_add.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_rm\ulazni_dokumenti\staro\cntNivelacija.Designer.vb">
+      <DependentUpon>cntNivelacija.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_rm\ulazni_dokumenti\staro\cntNivelacija.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_rm\ulazni_dokumenti\staro\cntNivelacija_edit.Designer.vb">
+      <DependentUpon>cntNivelacija_edit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_rm\ulazni_dokumenti\staro\cntNivelacija_edit.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_rm\ulazni_dokumenti\staro\cntNivelacija_search.Designer.vb">
+      <DependentUpon>cntNivelacija_search.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_rm\ulazni_dokumenti\staro\cntNivelacija_search.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_rm\cntPopis_print.Designer.vb">
+      <DependentUpon>cntPopis_print.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_rm\cntPopis_print.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="izvestaji\rm\rptArtikli_all.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptArtikli_all.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="izvestaji\app\rptGenericko.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptGenericko.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="izvestaji\app\rptJKL.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptJKL.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="kontrole_app\cntGenericko_ime.Designer.vb">
+      <DependentUpon>cntGenericko_ime.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_app\cntGenericko_ime.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_app\cntGenericko_ime_search.Designer.vb">
+      <DependentUpon>cntGenericko_ime_search.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_app\cntGenericko_ime_search.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_app\cntJKL_search.Designer.vb">
+      <DependentUpon>cntJKL_search.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_app\cntJKL_search.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="forme\frmPrint.designer.vb">
+      <DependentUpon>frmPrint.vb</DependentUpon>
+    </Compile>
+    <Compile Include="forme\frmPrint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kontrole_app\cntArtiklEdit.Designer.vb">
+      <DependentUpon>cntArtiklEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_app\cntArtiklEdit.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_app\cntArtikliUnos.Designer.vb">
+      <DependentUpon>cntArtikliUnos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_app\cntArtikliUnos.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="forme_app\frmGradoviEdit.Designer.vb">
+      <DependentUpon>frmGradoviEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="forme_app\frmGradoviEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forme_app\frmMagacinEdit.Designer.vb">
+      <DependentUpon>frmMagacinEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="forme_app\frmMagacinEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forme_fn\frmIzvodiEdit.designer.vb">
+      <DependentUpon>frmIzvodiEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="forme_fn\frmIzvodiEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forme_fn\frmIzvodiUnos.designer.vb">
+      <DependentUpon>frmIzvodiUnos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="forme_fn\frmIzvodiUnos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forme_app\frmKategorijeEdit.designer.vb">
+      <DependentUpon>frmKategorijeEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="forme_app\frmKategorijeEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forme_app\frmKategorijeUnos.designer.vb">
+      <DependentUpon>frmKategorijeUnos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="forme_app\frmKategorijeUnos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forme_app\frmMagacinUnos.Designer.vb">
+      <DependentUpon>frmMagacinUnos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="forme_app\frmMagacinUnos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forme_app\frmOdlozenoEdit.designer.vb">
+      <DependentUpon>frmOdlozenoEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="forme_app\frmOdlozenoEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forme_app\frmOdlozenoUnos.designer.vb">
+      <DependentUpon>frmOdlozenoUnos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="forme_app\frmOdlozenoUnos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forme_app\frmSemaEdit.designer.vb">
+      <DependentUpon>frmSemaEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="forme_app\frmSemaEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forme_app\frmSemaUnos.designer.vb">
+      <DependentUpon>frmSemaUnos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="forme_app\frmSemaUnos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forme_rm\cntTrebovanjeUnos.Designer.vb">
+      <DependentUpon>cntTrebovanjeUnos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="forme_rm\cntTrebovanjeUnos.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="forme_rm\frmPotvrdaEdit.designer.vb">
+      <DependentUpon>frmPotvrdaEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="forme_rm\frmPotvrdaEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forme_rm\frmPotvrdaUnos.designer.vb">
+      <DependentUpon>frmPotvrdaUnos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="forme_rm\frmPotvrdaUnos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forme_rm\frmPredracunEdit.designer.vb">
+      <DependentUpon>frmPredracunEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="forme_rm\frmPredracunEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forme_rm\frmPredracuniUnos.designer.vb">
+      <DependentUpon>frmPredracuniUnos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="forme_rm\frmPredracuniUnos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forme_rm\frmPrispece.designer.vb">
+      <DependentUpon>frmPrispece.vb</DependentUpon>
+    </Compile>
+    <Compile Include="forme_rm\frmPrispece.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forme_rm\frmPromenjena_cena.designer.vb">
+      <DependentUpon>frmPromenjena_cena.vb</DependentUpon>
+    </Compile>
+    <Compile Include="forme_rm\frmPromenjena_cena.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forme_rm\frmPutniNalogEdit.designer.vb">
+      <DependentUpon>frmPutniNalogEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="forme_rm\frmPutniNalogEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forme_rm\frmPutniNalogUnos.designer.vb">
+      <DependentUpon>frmPutniNalogUnos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="forme_rm\frmPutniNalogUnos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forme_rm\frmPutniRacunEdit.designer.vb">
+      <DependentUpon>frmPutniRacunEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="forme_rm\frmPutniRacunEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forme_rm\frmPutniRacunUnos.designer.vb">
+      <DependentUpon>frmPutniRacunUnos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="forme_rm\frmPutniRacunUnos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forme_rm\frmRacuniEdit.designer.vb">
+      <DependentUpon>frmRacuniEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="forme_rm\frmRacuniEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forme_rm\frmRacunUnos.designer.vb">
+      <DependentUpon>frmRacunUnos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="forme_rm\frmRacunUnos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forme_rm\frmRadniNalogEdit.designer.vb">
+      <DependentUpon>frmRadniNalogEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="forme_rm\frmRadniNalogEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forme_rm\frmRadniNalogUnos.designer.vb">
+      <DependentUpon>frmRadniNalogUnos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="forme_rm\frmRadniNalogUnos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forme_rm\frmUlazniRacuniEdit.designer.vb">
+      <DependentUpon>frmUlazniRacuniEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="forme_rm\frmUlazniRacuniEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forme_rm\frmUlazniRacuniUnos.designer.vb">
+      <DependentUpon>frmUlazniRacuniUnos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="forme_rm\frmUlazniRacuniUnos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSlobodniNalozi.designer.vb">
+      <DependentUpon>frmSlobodniNalozi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSlobodniNalozi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="izvestaji\rm\rptStanjeNaPopisu.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptStanjeNaPopisu.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="izvestaji\app\rptGradovi.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptGradovi.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="izvestaji\rm\rptUlazni_Dokument.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptUlazni_Dokument.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="izvestaji\rm\rptMagacini.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptMagacini.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="izvestaji\rm\rptMagacinPopisnaLista.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptMagacinPopisnaLista.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="izvestaji\rm\rptMagacinStanje.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptMagacinStanje.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="izvestaji\finansijsko\rptNalog.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptNalog.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="izvestaji\rm\rptNivelacija.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptNivelacija.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="izvestaji\app\rptOJ.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptOJ.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="izvestaji\app\rptOJDetalji.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptOJDetalji.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="izvestaji\app\rptOpstine.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptOpstine.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="izvestaji\rptOS.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptOS.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="izvestaji\app\rptPartneri.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptPartneri.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="izvestaji\app\rptPdv.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptPdv.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="izvestaji\rptPredracun.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptPredracun.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="izvestaji\rptPredracunBlank.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptPredracunBlank.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="izvestaji\rptPutniNalog.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptPutniNalog.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="izvestaji\rptPutniRacun.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptPutniRacun.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="izvestaji\rptRacun.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptRacun.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="izvestaji\rptRacunBlank.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptRacunBlank.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="izvestaji\rptRadniNalog.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptRadniNalog.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="izvestaji\rptVirman.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptVirman.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="izvestaji\rptVirmanBlank.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptVirmanBlank.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="kontrole_app\cntAlati.Designer.vb">
+      <DependentUpon>cntAlati.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_app\cntAlati.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_app\cntGrupeArt.Designer.vb">
+      <DependentUpon>cntGrupeArt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_app\cntGrupeArt.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_app\cntJKL.Designer.vb">
+      <DependentUpon>cntJKL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_app\cntJKL.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_app\cntNaselja.Designer.vb">
+      <DependentUpon>cntNaselja.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_app\cntNaselja.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_app\cntOJ.Designer.vb">
+      <DependentUpon>cntOJ.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_app\cntOJ.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_fn\cntIzvodi.designer.vb">
+      <DependentUpon>cntIzvodi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_fn\cntIzvodi.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_app\cntMaticniPodaci.Designer.vb">
+      <DependentUpon>cntMaticniPodaci.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_app\cntMaticniPodaci.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_meni\cntMeniArtikli.Designer.vb">
+      <DependentUpon>cntMeniArtikli.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_meni\cntMeniArtikli.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_meni\cntMeniFinansijsko.designer.vb">
+      <DependentUpon>cntMeniFinansijsko.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_meni\cntMeniFinansijsko.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_meni\cntMeniMaticniPodaci.designer.vb">
+      <DependentUpon>cntMeniMaticniPodaci.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_meni\cntMeniMaticniPodaci.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_meni\cntMeniPartneri.Designer.vb">
+      <DependentUpon>cntMeniPartneri.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_meni\cntMeniPartneri.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_app\cntKategorije.designer.vb">
+      <DependentUpon>cntKategorije.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_app\cntKategorije.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_app\cntKontniPlan.designer.vb">
+      <DependentUpon>cntKontniPlan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_app\cntKontniPlan.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_meni\cntMeniStart.Designer.vb">
+      <DependentUpon>cntMeniStart.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_meni\cntMeniStart.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_meni\cntMeniRobno.Designer.vb">
+      <DependentUpon>cntMeniRobno.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_meni\cntMeniRobno.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_rm\cntDPromet.Designer.vb">
+      <DependentUpon>cntDPromet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_rm\cntDPromet.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_rm\cntDPromet_print.Designer.vb">
+      <DependentUpon>cntDPromet_print.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_rm\cntDPromet_print.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_rm\cntDPromet_search.Designer.vb">
+      <DependentUpon>cntDPromet_search.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_rm\cntDPromet_search.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_rm\izlazni_dokumenti\staro\cntIntDostavIzlaz.Designer.vb">
+      <DependentUpon>cntIntDostavIzlaz.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_rm\izlazni_dokumenti\staro\cntIntDostavIzlaz.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_rm\izlazni_dokumenti\staro\cntIntDostavIzlaz_add.Designer.vb">
+      <DependentUpon>cntIntDostavIzlaz_add.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_rm\izlazni_dokumenti\staro\cntIntDostavIzlaz_add.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_rm\izlazni_dokumenti\staro\cntIntDostavIzlaz_edit.Designer.vb">
+      <DependentUpon>cntIntDostavIzlaz_edit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_rm\izlazni_dokumenti\staro\cntIntDostavIzlaz_edit.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_rm\izlazni_dokumenti\staro\cntIntDostavIzlaz_print.Designer.vb">
+      <DependentUpon>cntIntDostavIzlaz_print.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_rm\izlazni_dokumenti\staro\cntIntDostavIzlaz_print.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_rm\izlazni_dokumenti\staro\cntIntDostavIzlaz_sreach.Designer.vb">
+      <DependentUpon>cntIntDostavIzlaz_sreach.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_rm\izlazni_dokumenti\staro\cntIntDostavIzlaz_sreach.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_rm\ulazni_dokumenti\staro\cntIntDostavUlaz.Designer.vb">
+      <DependentUpon>cntIntDostavUlaz.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_rm\ulazni_dokumenti\staro\cntIntDostavUlaz.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_rm\ulazni_dokumenti\staro\cntIntDostavUlaz_add.Designer.vb">
+      <DependentUpon>cntIntDostavUlaz_add.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_rm\ulazni_dokumenti\staro\cntIntDostavUlaz_add.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_rm\ulazni_dokumenti\staro\cntIntDostavUlaz_edit.Designer.vb">
+      <DependentUpon>cntIntDostavUlaz_edit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_rm\ulazni_dokumenti\staro\cntIntDostavUlaz_edit.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_rm\ulazni_dokumenti\staro\cntIntDostavUlaz_print.Designer.vb">
+      <DependentUpon>cntIntDostavUlaz_print.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_rm\ulazni_dokumenti\staro\cntIntDostavUlaz_print.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_rm\ulazni_dokumenti\staro\cntIntDostavUlaz_search.Designer.vb">
+      <DependentUpon>cntIntDostavUlaz_search.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_rm\ulazni_dokumenti\staro\cntIntDostavUlaz_search.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_rm\izlazni_dokumenti\staro\cntKnjizOdobIzlaz.Designer.vb">
+      <DependentUpon>cntKnjizOdobIzlaz.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_rm\izlazni_dokumenti\staro\cntKnjizOdobIzlaz.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_rm\izlazni_dokumenti\staro\cntKnjizOdobIzlaz_add.Designer.vb">
+      <DependentUpon>cntKnjizOdobIzlaz_add.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_rm\izlazni_dokumenti\staro\cntKnjizOdobIzlaz_add.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_rm\izlazni_dokumenti\staro\cntKnjizOdobIzlaz_edit.Designer.vb">
+      <DependentUpon>cntKnjizOdobIzlaz_edit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_rm\izlazni_dokumenti\staro\cntKnjizOdobIzlaz_edit.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_rm\izlazni_dokumenti\staro\cntKnjizOdobIzlaz_search.Designer.vb">
+      <DependentUpon>cntKnjizOdobIzlaz_search.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_rm\izlazni_dokumenti\staro\cntKnjizOdobIzlaz_search.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_rm\izlazni_dokumenti\staro\cntKnjizZaduzIzlaz_add.Designer.vb">
+      <DependentUpon>cntKnjizZaduzIzlaz_add.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_rm\izlazni_dokumenti\staro\cntKnjizZaduzIzlaz_add.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_rm\izlazni_dokumenti\staro\cntKnjizZaduzIzlaz_print.Designer.vb">
+      <DependentUpon>cntKnjizZaduzIzlaz_print.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_rm\izlazni_dokumenti\staro\cntKnjizZaduzIzlaz_print.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_rm\izlazni_dokumenti\staro\cntKnjizZaduzIzlaz_search.Designer.vb">
+      <DependentUpon>cntKnjizZaduzIzlaz_search.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_rm\izlazni_dokumenti\staro\cntKnjizZaduzIzlaz_search.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_rm\cntMagacini.Designer.vb">
+      <DependentUpon>cntMagacini.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_rm\cntMagacini.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_app\cntOdlozeno.designer.vb">
+      <DependentUpon>cntOdlozeno.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_app\cntOdlozeno.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_app\cntPartneri.designer.vb">
+      <DependentUpon>cntPartneri.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_app\cntPartneri.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_app\cntPDV.designer.vb">
+      <DependentUpon>cntPDV.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_app\cntPDV.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_app\cntPostavke.designer.vb">
+      <DependentUpon>cntPostavke.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_app\cntPostavke.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_app\cntSeme.designer.vb">
+      <DependentUpon>cntSeme.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_app\cntSeme.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_rm\cntCenovnik.Designer.vb">
+      <DependentUpon>cntCenovnik.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_rm\cntCenovnik.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_rm\cntObradaPodUlaz.Designer.vb">
+      <DependentUpon>cntObradaPodUlaz.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_rm\cntObradaPodUlaz.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_rm\cntPopis.Designer.vb">
+      <DependentUpon>cntPopis.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_rm\cntPopis.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_rm\cntPopis_add.Designer.vb">
+      <DependentUpon>cntPopis_add.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_rm\cntPopis_add.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_rm\cntPopis_edit.Designer.vb">
+      <DependentUpon>cntPopis_edit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_rm\cntPopis_edit.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_rm\cntPopis_search.Designer.vb">
+      <DependentUpon>cntPopis_search.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_rm\cntPopis_search.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_rm\ulazni_dokumenti\staro\cntPovracaj_roba_add.Designer.vb">
+      <DependentUpon>cntPovracaj_roba_add.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_rm\ulazni_dokumenti\staro\cntPovracaj_roba_add.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_rm\ulazni_dokumenti\staro\cntPovracaj_roba_print.Designer.vb">
+      <DependentUpon>cntPovracaj_roba_print.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_rm\ulazni_dokumenti\staro\cntPovracaj_roba_print.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_rm\ulazni_dokumenti\staro\cntPovracaj_roba_search.Designer.vb">
+      <DependentUpon>cntPovracaj_roba_search.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_rm\ulazni_dokumenti\staro\cntPovracaj_roba_search.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_rm\cntRacuni.designer.vb">
+      <DependentUpon>cntRacuni.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_rm\cntRacuni.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_app\cntArtikli.designer.vb">
+      <DependentUpon>cntArtikli.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_app\cntArtikli.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_rm\cntAnaliza_izlaz.Designer.vb">
+      <DependentUpon>cntAnaliza_izlaz.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_rm\cntAnaliza_izlaz.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_rm\cntSpecifikacija_izlaza.Designer.vb">
+      <DependentUpon>cntSpecifikacija_izlaza.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_rm\cntSpecifikacija_izlaza.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_rm\cntSpecifikacija_lager.Designer.vb">
+      <DependentUpon>cntSpecifikacija_lager.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_rm\cntSpecifikacija_lager.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_rm\cntSpecifikacija_ulaza.Designer.vb">
+      <DependentUpon>cntSpecifikacija_ulaza.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_rm\cntSpecifikacija_ulaza.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_rm\cntSpecifikacije.Designer.vb">
+      <DependentUpon>cntSpecifikacije.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_rm\cntSpecifikacije.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_rm\cntSpecifikacije_nivelacije.Designer.vb">
+      <DependentUpon>cntSpecifikacije_nivelacije.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_rm\cntSpecifikacije_nivelacije.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_rm\cntAnaliza_ulaz.Designer.vb">
+      <DependentUpon>cntAnaliza_ulaz.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_rm\cntAnaliza_ulaz.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_rm\cntTrebovanje.Designer.vb">
+      <DependentUpon>cntTrebovanje.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_rm\cntTrebovanje.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_rm\cntTrebovanje_add.Designer.vb">
+      <DependentUpon>cntTrebovanje_add.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_rm\cntTrebovanje_add.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_rm\cntTrebovanje_edit.Designer.vb">
+      <DependentUpon>cntTrebovanje_edit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_rm\cntTrebovanje_edit.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_rm\cntTrebovanje_print.Designer.vb">
+      <DependentUpon>cntTrebovanje_print.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_rm\cntTrebovanje_print.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_rm\cntTrebovanje_search.Designer.vb">
+      <DependentUpon>cntTrebovanje_search.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_rm\cntTrebovanje_search.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_rm\cntUIDok.Designer.vb">
+      <DependentUpon>cntUIDok.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_rm\cntUIDok.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_rm\cntUIDok_sreach.Designer.vb">
+      <DependentUpon>cntUIDok_sreach.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_rm\cntUIDok_sreach.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_rm\cntUIDok_unos.Designer.vb">
+      <DependentUpon>cntUIDok_unos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_rm\cntUIDok_unos.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kontrole_rm\cntUlazniRacuni.designer.vb">
+      <DependentUpon>cntUlazniRacuni.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontrole_rm\cntUlazniRacuni.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mCodovi.vb" />
+    <Compile Include="mConstante.vb" />
+    <Compile Include="mdiMain.designer.vb">
+      <DependentUpon>mdiMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="mdiMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mExport.vb" />
+    <Compile Include="mFunkcije.vb" />
+    <Compile Include="mFunk_Promet.vb" />
+    <Compile Include="mFunk_finansijsko.vb" />
+    <Compile Include="mKodoviZaPrebacivanje.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="tmp\CodeFile1.vb" />
+    <Compile Include="za_prenos.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="forme\frmArtikl_pick.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmArtikl_pick.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="izvestaji\app\rptJM.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptJM.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="izvestaji\finansijsko\rptAnalitika_kartica.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptAnalitika_kartica.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="izvestaji\finansijsko\rptAnalitika_kumulativ.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptAnalitika_kumulativ.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="izvestaji\finansijsko\rptAnalitika_po_kontima - analitika.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptAnalitika_po_kontima - analitika.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="izvestaji\finansijsko\rptAnalitika_po_kontima - sintetika.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptAnalitika_po_kontima - sintetika.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="izvestaji\finansijsko\rptBruto_bilans - analitika.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptBruto_bilans - analitika.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="izvestaji\finansijsko\rptBruto_bilans - sintetikla.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptBruto_bilans - sintetikla.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="izvestaji\finansijsko\rptOtv_st_izvod.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptOtv_st_izvod.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="izvestaji\finansijsko\rptOtv_st_pregled_otvorenih.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptOtv_st_pregled_otvorenih.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="izvestaji\finansijsko\rptOtv_st_pregled_zatvorenih.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptOtv_st_pregled_zatvorenih.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="izvestaji\finansijsko\rptOtv_st_zahtev.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptOtv_st_zahtev.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="izvestaji\finansijsko\rptPov_konta_pregled_otvorenih.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptPov_konta_pregled_otvorenih.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="izvestaji\proizvodnja\rptLab_dn.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptLab_dn.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="izvestaji\proizvodnja\rptLab_dn_izrada.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptLab_dn_izrada.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="izvestaji\proizvodnja\rptLab_dn_rekapit.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptLab_dn_rekapit.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="izvestaji\proizvodnja\rptLab_dn_trebovanje.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptLab_dn_trebovanje.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="izvestaji\proizvodnja\rptSastavnica.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptSastavnica.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="izvestaji\rm\rptAnaliza_lagera.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptAnaliza_lagera.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="izvestaji\finansijsko\rptGlavna_knjiga_kartica.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptGlavna_knjiga_kartica.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="izvestaji\rm\rptInterniPrenos.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptInterniPrenos.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="izvestaji\app\rptKontniPlan.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptKontniPlan.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="izvestaji\rm\rptIzlazni_Dokument.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptIzlazni_Dokument.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="izvestaji\rm\rptMagInterniPrenos.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptMagInterniPrenos.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="izvestaji\rm\rptDnevni_Promet-kumulat.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptDnevni_Promet-kumulat.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="izvestaji\rm\rptDnevni_Promet.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptDnevni_Promet.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="izvestaji\app\rptFO.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptFO.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="izvestaji\app\rptGrupeArt.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptGrupeArt.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="izvestaji\rm\rptLager.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptLager.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="izvestaji\app\rptNaselja.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptNaselja.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="izvestaji\rm\rptPopis.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptPopis.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="izvestaji\rm\rptPovracaj_robe.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptPovracaj_robe.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="izvestaji\rm\rptPopisnaLista.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptPopisnaLista.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="izvestaji\rm\rptPromet_art_detaljno.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptPromet_art_detaljno.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="izvestaji\rm\rptPromet_art_kumulativ.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptPromet_art_kumulativ.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="izvestaji\rm\rptPromet_mag_stanje.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptPromet_mag_stanje.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="izvestaji\rm\rptPromet_neslaganje.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptPromet_neslaganje.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="izvestaji\rm\rptAnaliza_izlaz.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptAnaliza_izlaz.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="izvestaji\rm\rptSpecifikacija_izlaz.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptSpecifikacija_izlaz.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="izvestaji\rm\rptSpecifikacija_lager.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptSpecifikacija_lager.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="izvestaji\rm\rptSpecifikacija_nivelacija.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptSpecifikacija_nivelacija.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="izvestaji\rm\rptAnaliza_ulaz.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptAnaliza_ulaz.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="izvestaji\rm\rptSpecifikacija_ulaz.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptSpecifikacija_ulaz.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="izvestaji\rm\rptTrebovanje.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptTrebovanje.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_app\cntArtikli_search.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntArtikli_search.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_app\cntFO.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntFO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_app\cntFO_add.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntFO_add.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_app\cntFO_edit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntFO_edit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_app\cntFO_search.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntFO_search.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_app\cntGenericko_ime_add.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntGenericko_ime_add.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_app\cntGenericko_ime_edit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntGenericko_ime_edit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_app\cntGrupeArt_add.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntGrupeArt_add.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_app\cntGrupeArt_edit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntGrupeArt_edit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_app\cntGrupeArt_search.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntGrupeArt_search.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_app\cntJKLEdit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntJKLEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_app\cntJKLUnos.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntJKLUnos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_app\cntJM.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntJM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_app\cntJM_add.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntJM_add.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_app\cntJM_edit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntJM_edit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_app\cntJM_search.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntJM_search.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_app\cntKontniPlan_add.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntKontniPlan_add.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_app\cntKontniPlan_edit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntKontniPlan_edit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_app\cntKontniPlan_search.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntKontniPlan_search.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_app\cntNaselja_add.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntNaselja_add.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_app\cntNaselja_edit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntNaselja_edit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_app\cntNaselja_search.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntNaselja_search.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_app\cntOJ_add.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntOJ_add.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_app\cntOJ_edit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntOJ_edit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_app\cntOJ_sreach.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntOJ_sreach.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_app\cntPartneri_add.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntPartneri_add.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_app\cntPartneri_edit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntPartneri_edit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_app\cntPartneri_sreach.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntPartneri_sreach.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_app\cntPDV_add.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntPDV_add.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_app\cntPDV_edit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntPDV_edit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_app\cntPDV_search.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntPDV_search.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_fn\cntAnalitika_pregled_po_kontima.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntAnalitika_pregled_po_kontima.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_fn\cntBruto_bilans.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntBruto_bilans.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_fn\cntFin_izvestaji.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntFin_izvestaji.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_fn\cntAnalitika_kartica_kup.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntAnalitika_kartica_kup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_fn\cntAnalitika_kartica_oj.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntAnalitika_kartica_oj.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_fn\cntAnalitika_kartica_partneri.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntAnalitika_kartica_partneri.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_fn\cntAnalitika_kumulativ.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntAnalitika_kumulativ.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_fn\cntKarticaGKnjige.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntKarticaGKnjige.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_fn\cntOtvorene_stavke_ispravke.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntOtvorene_stavke_ispravke.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_fn\cntPovezana_konta.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntPovezana_konta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_fn\cntPovezana_konta_ispravke.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntPovezana_konta_ispravke.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_meni\cntMeniProizvodnja.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntMeniProizvodnja.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_proizvodnja\cntLab_Dn.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntLab_Dn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_proizvodnja\cntLab_Dn_add.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntLab_Dn_add.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_proizvodnja\cntLab_Dn_edit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntLab_Dn_edit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_proizvodnja\cntlab_Dn_izvestaji.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntlab_Dn_izvestaji.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_proizvodnja\cntLab_Dn_search.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntLab_Dn_search.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_proizvodnja\cntSastavnica.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntSastavnica.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_proizvodnja\cntSastavnica_add.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntSastavnica_add.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_proizvodnja\cntSastavnica_edit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntSastavnica_edit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_proizvodnja\cntSastavnica_search.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntSastavnica_search.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_rm\izlazni_dokumenti\cntRobno_izlaz.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntRobno_izlaz.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_rm\izlazni_dokumenti\cntRobno_izlaz_add.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntRobno_izlaz_add.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_rm\izlazni_dokumenti\cntRobno_izlaz_edit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntRobno_izlaz_edit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_rm\izlazni_dokumenti\cntRobno_izlaz_search.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntRobno_izlaz_search.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_rm\izlazni_dokumenti\staro\cntKnjizOdobIzlaz_print.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntKnjizOdobIzlaz_print.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_rm\izlazni_dokumenti\staro\cntKnjizZaduzIzlaz.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntKnjizZaduzIzlaz.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_rm\izlazni_dokumenti\staro\cntKnjizZaduzIzlaz_edit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntKnjizZaduzIzlaz_edit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_rm\ulazni_dokumenti\cntRobno_ulaz_search.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntRobno_ulaz_search.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_rm\ulazni_dokumenti\cntRobno_ulaz_add.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntRobno_ulaz_add.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_rm\ulazni_dokumenti\cntRobno_ulaz.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntRobno_ulaz.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_rm\ulazni_dokumenti\cntRobno_ulaz_edit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntRobno_ulaz_edit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_rm\ulazni_dokumenti\staro\cntMagIntPrenos.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntMagIntPrenos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_rm\ulazni_dokumenti\staro\cntMagIntPrenos_edit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntMagIntPrenos_edit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_rm\ulazni_dokumenti\staro\cntMagIntPrenos_search.resx">
+      <DependentUpon>cntMagIntPrenos_search.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_rm\ulazni_dokumenti\staro\cntNivelacija_add.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntNivelacija_add.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_rm\ulazni_dokumenti\staro\cntNivelacija_print.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntNivelacija_print.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_rm\ulazni_dokumenti\staro\cntPovracaj_roba.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntPovracaj_roba.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_rm\ulazni_dokumenti\staro\cntPovracaj_roba_edit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntPovracaj_roba_edit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tmp\cntKartice_po_analititici.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntKartice_po_analititici.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_fn\cntNalog.resx">
+      <DependentUpon>cntNalog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_fn\cntNalog_add.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntNalog_add.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_fn\cntNalog_edit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntNalog_edit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_fn\cntNalog_print.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntNalog_print.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_fn\cntNalog_search.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntNalog_search.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_fn\cntNalog_storno.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntNalog_storno.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_fn\cntNalozi_staro.resx">
+      <DependentUpon>cntNalozi_staro.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_meni\cntMeniIzvestaji.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntMeniIzvestaji.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_meni\cntMeniObrada_Izlaz.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntMeniObrada_Izlaz.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_meni\cntMeniObrada_Ostalo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntMeniObrada_Ostalo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_fn\cntOtvorene_stavke.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntOtvorene_stavke.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_rm\cntAnaliza.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntAnaliza.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_rm\cntAnaliza_lagera.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntAnaliza_lagera.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="izvestaji\rm\rptArtikli_all.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptArtikli_all.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="izvestaji\app\rptGenericko.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptGenericko.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="izvestaji\app\rptJKL.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptJKL.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_app\cntGenericko_ime.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntGenericko_ime.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_app\cntGenericko_ime_search.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntGenericko_ime_search.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_app\cntJKL_search.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntJKL_search.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forme\frmPrint.resx">
+      <DependentUpon>frmPrint.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_app\cntArtiklEdit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntArtiklEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_app\cntArtikliUnos.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntArtikliUnos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forme_app\frmGradoviEdit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmGradoviEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forme_app\frmMagacinEdit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmMagacinEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forme_fn\frmIzvodiEdit.resx">
+      <DependentUpon>frmIzvodiEdit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forme_fn\frmIzvodiUnos.resx">
+      <DependentUpon>frmIzvodiUnos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forme_app\frmKategorijeEdit.resx">
+      <DependentUpon>frmKategorijeEdit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forme_app\frmKategorijeUnos.resx">
+      <DependentUpon>frmKategorijeUnos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forme_app\frmMagacinUnos.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmMagacinUnos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forme_app\frmOdlozenoEdit.resx">
+      <DependentUpon>frmOdlozenoEdit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forme_app\frmOdlozenoUnos.resx">
+      <DependentUpon>frmOdlozenoUnos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forme_app\frmSemaEdit.resx">
+      <DependentUpon>frmSemaEdit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forme_app\frmSemaUnos.resx">
+      <DependentUpon>frmSemaUnos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forme_rm\cntTrebovanjeUnos.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntTrebovanjeUnos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forme_rm\frmPotvrdaEdit.resx">
+      <DependentUpon>frmPotvrdaEdit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forme_rm\frmPotvrdaUnos.resx">
+      <DependentUpon>frmPotvrdaUnos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forme_rm\frmPredracunEdit.resx">
+      <DependentUpon>frmPredracunEdit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forme_rm\frmPredracuniUnos.resx">
+      <DependentUpon>frmPredracuniUnos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forme_rm\frmPrispece.resx">
+      <DependentUpon>frmPrispece.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forme_rm\frmPromenjena_cena.resx">
+      <DependentUpon>frmPromenjena_cena.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forme_rm\frmPutniNalogEdit.resx">
+      <DependentUpon>frmPutniNalogEdit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forme_rm\frmPutniNalogUnos.resx">
+      <DependentUpon>frmPutniNalogUnos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forme_rm\frmPutniRacunEdit.resx">
+      <DependentUpon>frmPutniRacunEdit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forme_rm\frmPutniRacunUnos.resx">
+      <DependentUpon>frmPutniRacunUnos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forme_rm\frmRacuniEdit.resx">
+      <DependentUpon>frmRacuniEdit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forme_rm\frmRacunUnos.resx">
+      <DependentUpon>frmRacunUnos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forme_rm\frmRadniNalogEdit.resx">
+      <DependentUpon>frmRadniNalogEdit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forme_rm\frmRadniNalogUnos.resx">
+      <DependentUpon>frmRadniNalogUnos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forme_rm\frmUlazniRacuniEdit.resx">
+      <DependentUpon>frmUlazniRacuniEdit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forme_rm\frmUlazniRacuniUnos.resx">
+      <DependentUpon>frmUlazniRacuniUnos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSlobodniNalozi.resx">
+      <DependentUpon>frmSlobodniNalozi.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="izvestaji\rm\rptStanjeNaPopisu.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptStanjeNaPopisu.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="izvestaji\app\rptGradovi.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptGradovi.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="izvestaji\rm\rptUlazni_Dokument.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptUlazni_Dokument.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="izvestaji\rm\rptMagacini.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptMagacini.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="izvestaji\rm\rptMagacinPopisnaLista.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptMagacinPopisnaLista.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="izvestaji\rm\rptMagacinStanje.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptMagacinStanje.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="izvestaji\finansijsko\rptNalog.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptNalog.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="izvestaji\rm\rptNivelacija.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptNivelacija.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="izvestaji\app\rptOJ.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptOJ.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="izvestaji\app\rptOJDetalji.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptOJDetalji.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="izvestaji\app\rptOpstine.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptOpstine.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="izvestaji\rptOS.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptOS.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="izvestaji\app\rptPartneri.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptPartneri.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="izvestaji\app\rptPdv.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptPdv.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="izvestaji\rptPredracun.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptPredracun.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="izvestaji\rptPredracunBlank.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptPredracunBlank.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="izvestaji\rptPutniNalog.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptPutniNalog.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="izvestaji\rptPutniRacun.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptPutniRacun.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="izvestaji\rptRacun.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptRacun.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="izvestaji\rptRacunBlank.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptRacunBlank.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="izvestaji\rptRadniNalog.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptRadniNalog.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="izvestaji\rptVirman.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptVirman.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="izvestaji\rptVirmanBlank.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptVirmanBlank.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_app\cntAlati.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntAlati.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_app\cntGrupeArt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntGrupeArt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_app\cntJKL.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntJKL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_app\cntNaselja.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntNaselja.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_app\cntOJ.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntOJ.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_fn\cntIzvodi.resx">
+      <DependentUpon>cntIzvodi.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_app\cntMaticniPodaci.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntMaticniPodaci.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_meni\cntMeniArtikli.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntMeniArtikli.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_meni\cntMeniFinansijsko.resx">
+      <DependentUpon>cntMeniFinansijsko.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_meni\cntMeniMaticniPodaci.resx">
+      <DependentUpon>cntMeniMaticniPodaci.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_meni\cntMeniPartneri.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntMeniPartneri.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_app\cntKategorije.resx">
+      <DependentUpon>cntKategorije.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_app\cntKontniPlan.resx">
+      <DependentUpon>cntKontniPlan.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_meni\cntMeniStart.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntMeniStart.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_meni\cntMeniRobno.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntMeniRobno.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_rm\cntIzvestaji.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntIzvestaji.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_rm\cntIzvestaji_kartica.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntIzvestaji_kartica.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_rm\cntDPromet.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntDPromet.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_rm\cntDPromet_print.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntDPromet_print.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_rm\cntDPromet_search.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntDPromet_search.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_rm\izlazni_dokumenti\staro\cntIntDostavIzlaz.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntIntDostavIzlaz.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_rm\izlazni_dokumenti\staro\cntIntDostavIzlaz_add.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntIntDostavIzlaz_add.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_rm\izlazni_dokumenti\staro\cntIntDostavIzlaz_edit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntIntDostavIzlaz_edit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_rm\izlazni_dokumenti\staro\cntIntDostavIzlaz_print.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntIntDostavIzlaz_print.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_rm\izlazni_dokumenti\staro\cntIntDostavIzlaz_sreach.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntIntDostavIzlaz_sreach.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_rm\ulazni_dokumenti\staro\cntIntDostavUlaz.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntIntDostavUlaz.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_rm\ulazni_dokumenti\staro\cntIntDostavUlaz_add.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntIntDostavUlaz_add.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_rm\ulazni_dokumenti\staro\cntIntDostavUlaz_edit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntIntDostavUlaz_edit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_rm\ulazni_dokumenti\staro\cntIntDostavUlaz_print.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntIntDostavUlaz_print.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_rm\ulazni_dokumenti\staro\cntIntDostavUlaz_search.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntIntDostavUlaz_search.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_rm\cntInterniPrenos.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntInterniPrenos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_rm\cntInterniPrenos_add.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntInterniPrenos_add.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_rm\cntInterniPrenos_edit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntInterniPrenos_edit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_rm\cntInterniPrenos_print.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntInterniPrenos_print.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_rm\cntInterniPrenos_search.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntInterniPrenos_search.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_rm\cntIzvestaji_neslaganja.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntIzvestaji_neslaganja.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_rm\cntIzvestaji_stanje.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntIzvestaji_stanje.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_rm\izlazni_dokumenti\staro\cntKnjizOdobIzlaz.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntKnjizOdobIzlaz.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_rm\izlazni_dokumenti\staro\cntKnjizOdobIzlaz_add.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntKnjizOdobIzlaz_add.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_rm\izlazni_dokumenti\staro\cntKnjizOdobIzlaz_edit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntKnjizOdobIzlaz_edit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_rm\izlazni_dokumenti\staro\cntKnjizOdobIzlaz_search.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntKnjizOdobIzlaz_search.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_rm\izlazni_dokumenti\staro\cntKnjizZaduzIzlaz_add.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntKnjizZaduzIzlaz_add.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_rm\izlazni_dokumenti\staro\cntKnjizZaduzIzlaz_print.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntKnjizZaduzIzlaz_print.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_rm\izlazni_dokumenti\staro\cntKnjizZaduzIzlaz_search.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntKnjizZaduzIzlaz_search.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_rm\cntLista.resx">
+      <DependentUpon>cntLista.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_rm\cntMagacini.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntMagacini.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_app\cntOdlozeno.resx">
+      <DependentUpon>cntOdlozeno.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_app\cntPartneri.resx">
+      <DependentUpon>cntPartneri.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_app\cntPDV.resx">
+      <DependentUpon>cntPDV.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_app\cntPostavke.resx">
+      <DependentUpon>cntPostavke.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_app\cntSeme.resx">
+      <DependentUpon>cntSeme.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_rm\cntCenovnik.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntCenovnik.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_rm\ulazni_dokumenti\staro\cntMagIntPrenos_add.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntMagIntPrenos_add.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_rm\ulazni_dokumenti\staro\cntNivelacija.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntNivelacija.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_rm\ulazni_dokumenti\staro\cntNivelacija_edit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntNivelacija_edit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_rm\ulazni_dokumenti\staro\cntNivelacija_search.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntNivelacija_search.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_rm\cntObradaPodUlaz.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntObradaPodUlaz.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_rm\cntPopis.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntPopis.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_rm\cntPopis_add.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntPopis_add.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_rm\cntPopis_edit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntPopis_edit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_rm\cntPopis_print.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntPopis_print.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_rm\cntPopis_search.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntPopis_search.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_rm\ulazni_dokumenti\staro\cntPovracaj_roba_add.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntPovracaj_roba_add.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_rm\ulazni_dokumenti\staro\cntPovracaj_roba_print.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntPovracaj_roba_print.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_rm\ulazni_dokumenti\staro\cntPovracaj_roba_search.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntPovracaj_roba_search.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_rm\cntRacuni.resx">
+      <DependentUpon>cntRacuni.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_app\cntArtikli.resx">
+      <DependentUpon>cntArtikli.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_rm\cntAnaliza_izlaz.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntAnaliza_izlaz.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_rm\cntSpecifikacija_izlaza.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntSpecifikacija_izlaza.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_rm\cntSpecifikacija_lager.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntSpecifikacija_lager.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_rm\cntSpecifikacija_ulaza.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntSpecifikacija_ulaza.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_rm\cntSpecifikacije.resx">
+      <DependentUpon>cntSpecifikacije.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_rm\cntSpecifikacije_nivelacije.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntSpecifikacije_nivelacije.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_rm\cntAnaliza_ulaz.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntAnaliza_ulaz.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_rm\cntTrebovanje.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntTrebovanje.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_rm\cntTrebovanje_add.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntTrebovanje_add.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_rm\cntTrebovanje_edit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntTrebovanje_edit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_rm\cntTrebovanje_print.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntTrebovanje_print.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_rm\cntTrebovanje_search.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntTrebovanje_search.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_rm\cntUIDok.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntUIDok.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_rm\cntUIDok_sreach.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntUIDok_sreach.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_rm\cntUIDok_unos.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cntUIDok_unos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrole_rm\cntUlazniRacuni.resx">
+      <DependentUpon>cntUlazniRacuni.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mdiMain.resx">
+      <DependentUpon>mdiMain.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dossiers Config%27.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dossiers Panneau de configuration.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dossiers recherches.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dossiers utilisateurs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Files-text.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LaST %28Cobalt%29 Books.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LaST %28Cobalt%29 Delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LaST %28Cobalt%29 Find.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LaST %28Cobalt%29 Floppy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LaST %28Cobalt%29 Folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LaST %28Cobalt%29 Library Folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LaST %28Cobalt%29 Open Folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LaST %28Cobalt%29 Printers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LaST %28Cobalt%29 Text File.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\msn_512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reload1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Themes 2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder Blue Software.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder Orange.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder Yellow Software.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\configuration_512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Font File Alt.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\File.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 Arrow Down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 Arrow Up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3 Down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3 Up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pan setting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3 Left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="kontrole_rm\sheme\ulazni_dokumenti.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kontrole_rm\sheme\ulazni_dokumenti.xsx">
+      <DependentUpon>ulazni_dokumenti.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\Control Panel Alt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="kontrole_rm\sheme\ulazni_dokumenti.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

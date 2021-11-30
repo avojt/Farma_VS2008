@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xml>
+  <CNNString>Data Source=.\SQLEXPRESS;Initial Catalog=farma;Integrated Security=SSPI;Persist Security Info=False</CNNString>
+</xml>

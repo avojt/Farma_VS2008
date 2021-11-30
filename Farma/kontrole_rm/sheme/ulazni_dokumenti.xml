@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xml>
+   <dokument>
+     <naziv>Kalkulacija</naziv>
+     <Tabela>Imena.tabele.rm_kalkulacija_head.ToString</Tabela>
+     <KonamdTekst>rm_kalkulacija</KonamdTekst>
+     <Broj_kolona>11</Broj_kolona>
+     <dokumenta_id>13</dokumenta_id>
+     <kotrole>
+       <![CDATA["Sifra"]]>
+       <![CDATA["Kolicina"]]>
+       <![CDATA["Nabavna cena"]]>
+       <![CDATA["Prodajna cena"]]>
+     </kotrole>
+   </dokument>
+  <dokument>
+  <object name="nivelacije" caption="Nivelacije">
+      <property name="Tabela" value="Imena.tabele.rm_nivelacije_head.ToString"></property>
+      <property name="KonamdTekst" value="rm_nivelacije"></property>
+      <property name="Broj_kolona" value="11"></property>
+      <property name="dokumenta_id" value="14"></property>
+      <property name="kotrole">
+        <![CDATA["Sifra"]]>
+        <![CDATA["Kolicina"]]>
+        <![CDATA["Nabavna cena"]]>
+        <![CDATA["Prodajna cena"]]>
+      </property>
+    </object>
+  </dokument>
+</xml>

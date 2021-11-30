@@ -1,0 +1,568 @@
+E:\projekti\Farma\Farma\bin\Debug\Farma.exe.config
+E:\projekti\Farma\Farma\obj\Debug\Farma.xml
+E:\projekti\Farma\Farma\obj\Debug\Farma.pdb
+E:\projekti\Farma\Farma\bin\Debug\Farma.exe
+E:\projekti\Farma\Farma\bin\Debug\Farma.pdb
+E:\projekti\Farma\Farma\bin\Debug\Farma.xml
+E:\projekti\Farma\Farma\obj\Debug\ResolveAssemblyReference.cache
+E:\projekti\Farma\Farma\obj\Debug\Farma.rptAnalitika_kartica.rpt
+E:\projekti\Farma\Farma\obj\Debug\Farma.rptAnalitika_kumulativ.rpt
+E:\projekti\Farma\Farma\obj\Debug\Farma.rptAnalitika_po_kontima - analitika.rpt
+E:\projekti\Farma\Farma\obj\Debug\Farma.rptAnalitika_po_kontima - sintetika.rpt
+E:\projekti\Farma\Farma\obj\Debug\Farma.rptBruto_bilans - analitika.rpt
+E:\projekti\Farma\Farma\obj\Debug\Farma.rptBruto_bilans - sintetikla.rpt
+E:\projekti\Farma\Farma\obj\Debug\Farma.rptOtv_st_izvod.rpt
+E:\projekti\Farma\Farma\obj\Debug\Farma.rptOtv_st_pregled_otvorenih.rpt
+E:\projekti\Farma\Farma\obj\Debug\Farma.rptOtv_st_pregled_zatvorenih.rpt
+E:\projekti\Farma\Farma\obj\Debug\Farma.rptOtv_st_zahtev.rpt
+E:\projekti\Farma\Farma\obj\Debug\Farma.rptPov_konta_pregled_otvorenih.rpt
+E:\projekti\Farma\Farma\obj\Debug\Farma.rptLab_dn.rpt
+E:\projekti\Farma\Farma\obj\Debug\Farma.rptSastavnica.rpt
+E:\projekti\Farma\Farma\obj\Debug\Farma.rptAnaliza_lagera.rpt
+E:\projekti\Farma\Farma\obj\Debug\Farma.rptGlavna_knjiga_kartica.rpt
+E:\projekti\Farma\Farma\obj\Debug\Farma.rptInterniPrenos.rpt
+E:\projekti\Farma\Farma\obj\Debug\Farma.rptKontniPlan.rpt
+E:\projekti\Farma\Farma\obj\Debug\Farma.rptMagInterniPrenos.rpt
+E:\projekti\Farma\Farma\obj\Debug\Farma.rptDnevni_Promet-kumulat.rpt
+E:\projekti\Farma\Farma\obj\Debug\Farma.rptDnevni_Promet.rpt
+E:\projekti\Farma\Farma\obj\Debug\Farma.rptFO.rpt
+E:\projekti\Farma\Farma\obj\Debug\Farma.rptGrupeArt.rpt
+E:\projekti\Farma\Farma\obj\Debug\Farma.rptLager.rpt
+E:\projekti\Farma\Farma\obj\Debug\Farma.rptNaselja.rpt
+E:\projekti\Farma\Farma\obj\Debug\Farma.rptPopis.rpt
+E:\projekti\Farma\Farma\obj\Debug\Farma.rptPovracaj_robe.rpt
+E:\projekti\Farma\Farma\obj\Debug\Farma.rptPopisnaLista.rpt
+E:\projekti\Farma\Farma\obj\Debug\Farma.rptPromet_art_detaljno.rpt
+E:\projekti\Farma\Farma\obj\Debug\Farma.rptPromet_art_kumulativ.rpt
+E:\projekti\Farma\Farma\obj\Debug\Farma.rptPromet_mag_stanje.rpt
+E:\projekti\Farma\Farma\obj\Debug\Farma.rptPromet_neslaganje.rpt
+E:\projekti\Farma\Farma\obj\Debug\Farma.rptAnaliza_izlaz.rpt
+E:\projekti\Farma\Farma\obj\Debug\Farma.rptSpecifikacija_izlaz.rpt
+E:\projekti\Farma\Farma\obj\Debug\Farma.rptSpecifikacija_lager.rpt
+E:\projekti\Farma\Farma\obj\Debug\Farma.rptSpecifikacija_nivelacija.rpt
+E:\projekti\Farma\Farma\obj\Debug\Farma.rptAnaliza_ulaz.rpt
+E:\projekti\Farma\Farma\obj\Debug\Farma.rptSpecifikacija_ulaz.rpt
+E:\projekti\Farma\Farma\obj\Debug\Farma.rptTrebovanje.rpt
+E:\projekti\Farma\Farma\obj\Debug\Farma.rptArtikli_all.rpt
+E:\projekti\Farma\Farma\obj\Debug\Farma.rptGenericko.rpt
+E:\projekti\Farma\Farma\obj\Debug\Farma.rptJKL.rpt
+E:\projekti\Farma\Farma\obj\Debug\Farma.rptStanjeNaPopisu.rpt
+E:\projekti\Farma\Farma\obj\Debug\Farma.rptGradovi.rpt
+E:\projekti\Farma\Farma\obj\Debug\Farma.rptUlazni_Dokument.rpt
+E:\projekti\Farma\Farma\obj\Debug\Farma.rptMagacini.rpt
+E:\projekti\Farma\Farma\obj\Debug\Farma.rptMagacinPopisnaLista.rpt
+E:\projekti\Farma\Farma\obj\Debug\Farma.rptMagacinStanje.rpt
+E:\projekti\Farma\Farma\obj\Debug\Farma.rptNalog.rpt
+E:\projekti\Farma\Farma\obj\Debug\Farma.rptNivelacija.rpt
+E:\projekti\Farma\Farma\obj\Debug\Farma.rptOJ.rpt
+E:\projekti\Farma\Farma\obj\Debug\Farma.rptOJDetalji.rpt
+E:\projekti\Farma\Farma\obj\Debug\Farma.rptOpstine.rpt
+E:\projekti\Farma\Farma\obj\Debug\Farma.rptOS.rpt
+E:\projekti\Farma\Farma\obj\Debug\Farma.rptPartneri.rpt
+E:\projekti\Farma\Farma\obj\Debug\Farma.rptPdv.rpt
+E:\projekti\Farma\Farma\obj\Debug\Farma.rptPredracun.rpt
+E:\projekti\Farma\Farma\obj\Debug\Farma.rptPredracunBlank.rpt
+E:\projekti\Farma\Farma\obj\Debug\Farma.rptPutniNalog.rpt
+E:\projekti\Farma\Farma\obj\Debug\Farma.rptPutniRacun.rpt
+E:\projekti\Farma\Farma\obj\Debug\Farma.rptRacun.rpt
+E:\projekti\Farma\Farma\obj\Debug\Farma.rptRacunBlank.rpt
+E:\projekti\Farma\Farma\obj\Debug\Farma.rptRadniNalog.rpt
+E:\projekti\Farma\Farma\obj\Debug\Farma.rptVirman.rpt
+E:\projekti\Farma\Farma\obj\Debug\Farma.rptVirmanBlank.rpt
+E:\projekti\Farma\Farma\obj\Debug\Farma.frmArtikl_pick.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntFO.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntFO_add.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntFO_edit.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntFO_search.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntGenericko_ime_add.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntGenericko_ime_edit.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntGrupeArt_add.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntGrupeArt_edit.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntGrupeArt_search.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntJKLEdit.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntJKLUnos.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntJM.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntJM_add.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntJM_edit.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntJM_search.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntKontniPlan_add.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntKontniPlan_edit.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntKontniPlan_search.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntNaselja_add.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntNaselja_edit.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntNaselja_search.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntOJ_add.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntOJ_edit.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntOJ_sreach.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntPartneri_add.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntPartneri_edit.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntPartneri_sreach.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntPDV_add.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntPDV_edit.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntPDV_search.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntAnalitika_pregled_po_kontima.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntBruto_bilans.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntFin_izvestaji.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntAnalitika_kartica_kup.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntAnalitika_kartica_oj.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntAnalitika_kartica_partneri.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntAnalitika_kumulativ.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntKarticaGKnjige.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntOtvorene_stavke_ispravke.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntPovezana_konta.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntPovezana_konta_ispravke.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntMeniProizvodnja.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntLab_Dn.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntLab_Dn_add.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntLab_Dn_edit.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntLab_Dn_search.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntSastavnica.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntSastavnica_add.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntSastavnica_edit.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntSastavnica_search.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntRobno_izlaz.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntRobno_izlaz_add.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntRobno_izlaz_edit.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntRobno_izlaz_search.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntRobno_ulaz_search.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntRobno_ulaz_add.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntRobno_ulaz.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntRobno_ulaz_edit.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntKartice_po_analititici.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntNalog.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntNalog_add.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntNalog_edit.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntNalog_print.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntNalog_search.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntNalog_storno.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntNalozi_staro.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntMeniIzvestaji.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntMeniObrada_Izlaz.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntMeniObrada_ostalo.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntOtvorene_stavke.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntAnaliza.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntAnaliza_lagera.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntGenericko_ime.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntGenericko_ime_search.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntJKL_search.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntArtikli_search.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.frmPrint.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntArtiklEdit.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntArtikliUnos.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.frmGradoviEdit.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.frmMagacinEdit.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.frmIzvodiEdit.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.frmIzvodiUnos.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.frmKategorijeEdit.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.frmKategorijeUnos.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.frmMagacinUnos.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.frmOdlozenoEdit.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.frmOdlozenoUnos.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.frmSemaEdit.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.frmSemaUnos.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntTrebovanjeUnos.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.frmPotvrdaEdit.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.frmPotvrdaUnos.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.frmPredracunEdit.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.frmPredracuniUnos.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.frmPrispece.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.frmPromenjena_cena.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.frmPutniNalogEdit.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.frmPutniNalogUnos.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.frmPutniRacunEdit.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.frmPutniRacunUnos.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.frmRacuniEdit.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.frmRacunUnos.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.frmRadniNalogEdit.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.frmRadniNalogUnos.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.frmUlazniRacuniEdit.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.frmUlazniRacuniUnos.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.frmSlobodniNalozi.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntAlati.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntGrupeArt.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntJKL.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntNaselja.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntOJ.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntIzvodi.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntMaticniPodaci.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntMeniArtikli.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntMeniFinansijsko.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntMeniMaticniPodaci.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntMeniPartneri.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntKategorije.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntKontniPlan.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntMeniStart.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntMeniRobno.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntIzvestaji.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntIzvestaji_kartica.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntDPromet.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntDPromet_print.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntDPromet_search.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntIntDostavIzlaz.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntIntDostavIzlaz_add.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntIntDostavIzlaz_edit.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntIntDostavIzlaz_print.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntIntDostavIzlaz_sreach.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntIntDostavUlaz.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntIntDostavUlaz_add.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntIntDostavUlaz_edit.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntIntDostavUlaz_print.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntIntDostavUlaz_search.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntInterniPrenos.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntInterniPrenos_add.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntInterniPrenos_edit.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntInterniPrenos_print.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntInterniPrenos_search.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntIzvestaji_neslaganja.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntIzvestaji_stanje.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntKnjizOdobIzlaz.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntKnjizOdobIzlaz_add.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntKnjizOdobIzlaz_edit.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntKnjizOdobIzlaz_print.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntKnjizOdobIzlaz_search.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntKnjizZaduzIzlaz.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntKnjizZaduzIzlaz_add.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntKnjizZaduzIzlaz_edit.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntKnjizZaduzIzlaz_print.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntKnjizZaduzIzlaz_search.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntLista.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntMagacini.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntOdlozeno.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntPartneri.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntPDV.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntPostavke.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntSeme.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntCenovnik.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntMagIntPrenos.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntMagIntPrenos_add.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntMagIntPrenos_edit.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntNivelacija.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntNivelacija_add.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntNivelacija_edit.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntNivelacija_print.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntNivelacija_search.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntObradaPodUlaz.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntPopis.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntPopis_add.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntPopis_edit.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntPopis_print.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntPopis_search.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntPovracaj_roba.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntPovracaj_roba_add.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntPovracaj_roba_edit.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntPovracaj_roba_print.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntPovracaj_roba_search.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntRacuni.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntArtikli.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntAnaliza_izlaz.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntSpecifikacija_izlaza.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntSpecifikacija_lager.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntSpecifikacija_ulaza.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntSpecifikacije.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntSpecifikacije_nivelacije.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntAnaliza_ulaz.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntTrebovanje.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntTrebovanje_add.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntTrebovanje_edit.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntTrebovanje_print.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntTrebovanje_search.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntUIDok.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntUIDok_sreach.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntUIDok_unos.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntUlazniRacuni.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.mdiMain.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.Resources.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.vbproj.GenerateResource.Cache
+E:\projekti\Farma\Farma\obj\Debug\Farma.exe
+E:\projekti\Farma\Farma\obj\Debug\Farma.rptIzlazni_Dokument.rpt
+E:\projekti\Farma\Farma\obj\Debug\Farma.rptLab_dn_izrada.rpt
+E:\projekti\Farma\Farma\obj\Debug\Farma.rptLab_dn_rekapit.rpt
+E:\projekti\Farma\Farma\obj\Debug\Farma.rptLab_dn_trebovanje.rpt
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntlab_Dn_izvestaji.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.cntMagIntPrenos_search.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.frmLogin.resources
+E:\projekti\Farma\Farma\obj\Debug\Farma.rptJM.rpt
+C:\Users\Public\VB Projects\Farma\Farma\bin\Debug\Farma.exe.config
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.xml
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.pdb
+C:\Users\Public\VB Projects\Farma\Farma\bin\Debug\Farma.exe
+C:\Users\Public\VB Projects\Farma\Farma\bin\Debug\Farma.pdb
+C:\Users\Public\VB Projects\Farma\Farma\bin\Debug\Farma.xml
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.rptJM.rpt
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.rptAnalitika_kartica.rpt
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.rptAnalitika_kumulativ.rpt
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.rptAnalitika_po_kontima - analitika.rpt
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.rptAnalitika_po_kontima - sintetika.rpt
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.rptBruto_bilans - analitika.rpt
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.rptBruto_bilans - sintetikla.rpt
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.rptOtv_st_izvod.rpt
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.rptOtv_st_pregled_otvorenih.rpt
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.rptOtv_st_pregled_zatvorenih.rpt
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.rptOtv_st_zahtev.rpt
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.rptPov_konta_pregled_otvorenih.rpt
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.rptLab_dn.rpt
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.rptLab_dn_izrada.rpt
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.rptLab_dn_rekapit.rpt
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.rptLab_dn_trebovanje.rpt
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.rptSastavnica.rpt
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.rptAnaliza_lagera.rpt
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.rptGlavna_knjiga_kartica.rpt
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.rptInterniPrenos.rpt
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.rptKontniPlan.rpt
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.rptIzlazni_Dokument.rpt
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.rptMagInterniPrenos.rpt
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.rptDnevni_Promet-kumulat.rpt
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.rptDnevni_Promet.rpt
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.rptFO.rpt
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.rptGrupeArt.rpt
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.rptLager.rpt
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.rptNaselja.rpt
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.rptPopis.rpt
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.rptPovracaj_robe.rpt
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.rptPopisnaLista.rpt
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.rptPromet_art_detaljno.rpt
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.rptPromet_art_kumulativ.rpt
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.rptPromet_mag_stanje.rpt
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.rptPromet_neslaganje.rpt
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.rptAnaliza_izlaz.rpt
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.rptSpecifikacija_izlaz.rpt
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.rptSpecifikacija_lager.rpt
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.rptSpecifikacija_nivelacija.rpt
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.rptAnaliza_ulaz.rpt
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.rptSpecifikacija_ulaz.rpt
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.rptTrebovanje.rpt
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.rptArtikli_all.rpt
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.rptGenericko.rpt
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.rptJKL.rpt
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.rptStanjeNaPopisu.rpt
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.rptGradovi.rpt
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.rptUlazni_Dokument.rpt
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.rptMagacini.rpt
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.rptMagacinPopisnaLista.rpt
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.rptMagacinStanje.rpt
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.rptNalog.rpt
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.rptNivelacija.rpt
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.rptOJ.rpt
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.rptOJDetalji.rpt
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.rptOpstine.rpt
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.rptOS.rpt
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.rptPartneri.rpt
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.rptPdv.rpt
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.rptPredracun.rpt
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.rptPredracunBlank.rpt
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.rptPutniNalog.rpt
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.rptPutniRacun.rpt
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.rptRacun.rpt
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.rptRacunBlank.rpt
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.rptRadniNalog.rpt
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.rptVirman.rpt
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.rptVirmanBlank.rpt
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.frmArtikl_pick.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntArtikli_search.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntFO.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntFO_add.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntFO_edit.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntFO_search.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntGenericko_ime_add.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntGenericko_ime_edit.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntGrupeArt_add.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntGrupeArt_edit.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntGrupeArt_search.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntJKLEdit.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntJKLUnos.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntJM.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntJM_add.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntJM_edit.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntJM_search.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntKontniPlan_add.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntKontniPlan_edit.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntKontniPlan_search.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntNaselja_add.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntNaselja_edit.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntNaselja_search.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntOJ_add.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntOJ_edit.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntOJ_sreach.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntPartneri_add.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntPartneri_edit.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntPartneri_sreach.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntPDV_add.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntPDV_edit.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntPDV_search.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntAnalitika_pregled_po_kontima.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntBruto_bilans.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntFin_izvestaji.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntAnalitika_kartica_kup.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntAnalitika_kartica_oj.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntAnalitika_kartica_partneri.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntAnalitika_kumulativ.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntKarticaGKnjige.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntOtvorene_stavke_ispravke.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntPovezana_konta.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntPovezana_konta_ispravke.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntMeniProizvodnja.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntLab_Dn.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntLab_Dn_add.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntLab_Dn_edit.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntlab_Dn_izvestaji.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntLab_Dn_search.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntSastavnica.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntSastavnica_add.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntSastavnica_edit.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntSastavnica_search.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntRobno_izlaz.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntRobno_izlaz_add.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntRobno_izlaz_edit.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntRobno_izlaz_search.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntKnjizOdobIzlaz_print.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntKnjizZaduzIzlaz.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntKnjizZaduzIzlaz_edit.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntRobno_ulaz_search.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntRobno_ulaz_add.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntRobno_ulaz.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntRobno_ulaz_edit.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntMagIntPrenos.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntMagIntPrenos_edit.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntMagIntPrenos_search.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntNivelacija_add.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntNivelacija_print.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntPovracaj_roba.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntPovracaj_roba_edit.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.frmLogin.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntKartice_po_analititici.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntNalog.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntNalog_add.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntNalog_edit.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntNalog_print.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntNalog_search.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntNalog_storno.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntNalozi_staro.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntMeniIzvestaji.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntMeniObrada_Izlaz.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntMeniObrada_ostalo.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntOtvorene_stavke.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntAnaliza.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntAnaliza_lagera.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntGenericko_ime.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntGenericko_ime_search.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntJKL_search.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.frmPrint.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntArtiklEdit.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntArtikliUnos.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.frmGradoviEdit.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.frmMagacinEdit.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.frmIzvodiEdit.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.frmIzvodiUnos.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.frmKategorijeEdit.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.frmKategorijeUnos.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.frmMagacinUnos.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.frmOdlozenoEdit.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.frmOdlozenoUnos.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.frmSemaEdit.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.frmSemaUnos.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntTrebovanjeUnos.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.frmPotvrdaEdit.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.frmPotvrdaUnos.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.frmPredracunEdit.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.frmPredracuniUnos.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.frmPrispece.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.frmPromenjena_cena.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.frmPutniNalogEdit.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.frmPutniNalogUnos.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.frmPutniRacunEdit.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.frmPutniRacunUnos.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.frmRacuniEdit.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.frmRacunUnos.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.frmRadniNalogEdit.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.frmRadniNalogUnos.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.frmUlazniRacuniEdit.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.frmUlazniRacuniUnos.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.frmSlobodniNalozi.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntAlati.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntGrupeArt.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntJKL.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntNaselja.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntOJ.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntIzvodi.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntMaticniPodaci.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntMeniArtikli.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntMeniFinansijsko.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntMeniMaticniPodaci.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntMeniPartneri.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntKategorije.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntKontniPlan.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntMeniStart.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntMeniRobno.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntIzvestaji.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntIzvestaji_kartica.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntDPromet.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntDPromet_print.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntDPromet_search.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntIntDostavIzlaz.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntIntDostavIzlaz_add.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntIntDostavIzlaz_edit.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntIntDostavIzlaz_print.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntIntDostavIzlaz_sreach.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntIntDostavUlaz.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntIntDostavUlaz_add.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntIntDostavUlaz_edit.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntIntDostavUlaz_print.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntIntDostavUlaz_search.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntInterniPrenos.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntInterniPrenos_add.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntInterniPrenos_edit.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntInterniPrenos_print.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntInterniPrenos_search.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntIzvestaji_neslaganja.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntIzvestaji_stanje.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntKnjizOdobIzlaz.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntKnjizOdobIzlaz_add.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntKnjizOdobIzlaz_edit.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntKnjizOdobIzlaz_search.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntKnjizZaduzIzlaz_add.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntKnjizZaduzIzlaz_print.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntKnjizZaduzIzlaz_search.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntLista.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntMagacini.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntOdlozeno.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntPartneri.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntPDV.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntPostavke.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntSeme.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntCenovnik.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntMagIntPrenos_add.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntNivelacija.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntNivelacija_edit.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntNivelacija_search.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntObradaPodUlaz.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntPopis.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntPopis_add.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntPopis_edit.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntPopis_print.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntPopis_search.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntPovracaj_roba_add.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntPovracaj_roba_print.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntPovracaj_roba_search.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntRacuni.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntArtikli.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntAnaliza_izlaz.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntSpecifikacija_izlaza.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntSpecifikacija_lager.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntSpecifikacija_ulaza.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntSpecifikacije.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntSpecifikacije_nivelacije.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntAnaliza_ulaz.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntTrebovanje.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntTrebovanje_add.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntTrebovanje_edit.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntTrebovanje_print.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntTrebovanje_search.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntUIDok.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntUIDok_sreach.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntUIDok_unos.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.cntUlazniRacuni.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.mdiMain.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.Resources.resources
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.vbproj.GenerateResource.Cache
+C:\Users\Public\VB Projects\Farma\Farma\obj\Debug\Farma.exe

@@ -1,0 +1,277 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Farma
+</name>
+</assembly>
+<members>
+<member name="T:Farma.DataSet1.rm_artikliDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Farma.DataSet1.app_partneriDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Farma.DataSet1.fn_kontaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Farma.DataSet1.rm_dokumentiDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Farma.DataSet1.rm_artikli_ceneDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Farma.DataSet1.app_pdvDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Farma.DataSet1.rm_artikliRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Farma.DataSet1.app_partneriRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Farma.DataSet1.fn_kontaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Farma.DataSet1.rm_dokumentiRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Farma.DataSet1.rm_artikli_ceneRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Farma.DataSet1.app_pdvRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Farma.DataSet1.rm_artikliRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Farma.DataSet1.app_partneriRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Farma.DataSet1.fn_kontaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Farma.DataSet1.rm_dokumentiRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Farma.DataSet1.rm_artikli_ceneRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Farma.DataSet1.app_pdvRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Farma.DataSet1">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Farma.DataSet1TableAdapters.rm_artikliTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Farma.DataSet1TableAdapters.app_partneriTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Farma.DataSet1TableAdapters.fn_kontaTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Farma.DataSet1TableAdapters.rm_dokumentiTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Farma.DataSet1TableAdapters.rm_artikli_ceneTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Farma.DataSet1TableAdapters.app_pdvTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Farma.DataSet1TableAdapters.qryTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="P:Farma.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Farma.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:Farma.My.Resources.Resources.text_add">
+	<summary>
+  Looks up a localized string similar to  - unos.
+</summary>
+</member><member name="P:Farma.My.Resources.Resources.text_artikli_promet">
+	<summary>
+  Looks up a localized string similar to : promet artikla.
+</summary>
+</member><member name="P:Farma.My.Resources.Resources.text_brisanje">
+	<summary>
+  Looks up a localized string similar to Da li ste sigurno da želite da izbrišete zapis sa šifrom.
+</summary>
+</member><member name="P:Farma.My.Resources.Resources.text_dnevni_promet">
+	<summary>
+  Looks up a localized string similar to : dnevni promet.
+</summary>
+</member><member name="P:Farma.My.Resources.Resources.text_edit">
+	<summary>
+  Looks up a localized string similar to - ažuriranje.
+</summary>
+</member><member name="P:Farma.My.Resources.Resources.text_fin_analitika">
+	<summary>
+  Looks up a localized string similar to : analitika.
+</summary>
+</member><member name="P:Farma.My.Resources.Resources.text_fin_kartice">
+	<summary>
+  Looks up a localized string similar to : kartice.
+</summary>
+</member><member name="P:Farma.My.Resources.Resources.text_greska">
+	<summary>
+  Looks up a localized string similar to Došlo je do greške prilikom izvršenja naredbe..
+</summary>
+</member><member name="P:Farma.My.Resources.Resources.text_greska1">
+	<summary>
+  Looks up a localized string similar to Došlo je do greške. Zahtevana procedura nije izvršena..
+</summary>
+</member><member name="P:Farma.My.Resources.Resources.text_int_dost_izlaz">
+	<summary>
+  Looks up a localized string similar to : intrrna dostavnica izlaz.
+</summary>
+</member><member name="P:Farma.My.Resources.Resources.text_int_dost_ulaz">
+	<summary>
+  Looks up a localized string similar to : intrrna dostavnica ulaz.
+</summary>
+</member><member name="P:Farma.My.Resources.Resources.text_int_prenos">
+	<summary>
+  Looks up a localized string similar to : intrrni prenos.
+</summary>
+</member><member name="P:Farma.My.Resources.Resources.text_kalkulacije">
+	<summary>
+  Looks up a localized string similar to : kalkulacije.
+</summary>
+</member><member name="P:Farma.My.Resources.Resources.text_konta">
+	<summary>
+  Looks up a localized string similar to : kontni okvir.
+</summary>
+</member><member name="P:Farma.My.Resources.Resources.text_lab_dnevnik">
+	<summary>
+  Looks up a localized string similar to : laboratorijski dnevnik.
+</summary>
+</member><member name="P:Farma.My.Resources.Resources.text_lager">
+	<summary>
+  Looks up a localized string similar to : lager lista.
+</summary>
+</member><member name="P:Farma.My.Resources.Resources.text_mip">
+	<summary>
+  Looks up a localized string similar to : magacinski interni prenos.
+</summary>
+</member><member name="P:Farma.My.Resources.Resources.text_nalog">
+	<summary>
+  Looks up a localized string similar to : nalog.
+</summary>
+</member><member name="P:Farma.My.Resources.Resources.text_naselja">
+	<summary>
+  Looks up a localized string similar to : naselja.
+</summary>
+</member><member name="P:Farma.My.Resources.Resources.text_nivelacija">
+	<summary>
+  Looks up a localized string similar to : nivelacija.
+</summary>
+</member><member name="P:Farma.My.Resources.Resources.text_obrada_podataka">
+	<summary>
+  Looks up a localized string similar to : OBRADAPODA PODATAKA.
+</summary>
+</member><member name="P:Farma.My.Resources.Resources.text_oj">
+	<summary>
+  Looks up a localized string similar to : organizacione jedinice.
+</summary>
+</member><member name="P:Farma.My.Resources.Resources.text_otvorene_stavke">
+	<summary>
+  Looks up a localized string similar to : otvorene stavke.
+</summary>
+</member><member name="P:Farma.My.Resources.Resources.text_partneri">
+	<summary>
+  Looks up a localized string similar to : partneri.
+</summary>
+</member><member name="P:Farma.My.Resources.Resources.text_povezana_konta">
+	<summary>
+  Looks up a localized string similar to : povezana konta.
+</summary>
+</member><member name="P:Farma.My.Resources.Resources.text_prazan_zapis">
+	<summary>
+  Looks up a localized string similar to Nije moguće uneti prazan zapis..
+</summary>
+</member><member name="P:Farma.My.Resources.Resources.text_print">
+	<summary>
+  Looks up a localized string similar to  - štampanje.
+</summary>
+</member><member name="P:Farma.My.Resources.Resources.text_proizvodnja">
+	<summary>
+  Looks up a localized string similar to : PROIZVODNJA.
+</summary>
+</member><member name="P:Farma.My.Resources.Resources.text_robno">
+	<summary>
+  Looks up a localized string similar to : ROBNO.
+</summary>
+</member><member name="P:Farma.My.Resources.Resources.text_sastavnice">
+	<summary>
+  Looks up a localized string similar to : sastavnice.
+</summary>
+</member><member name="P:Farma.My.Resources.Resources.text_search">
+	<summary>
+  Looks up a localized string similar to  - pretraga.
+</summary>
+</member><member name="P:Farma.My.Resources.Resources.text_spec_izlaz">
+	<summary>
+  Looks up a localized string similar to : izlaz.
+</summary>
+</member><member name="P:Farma.My.Resources.Resources.text_spec_ulaz">
+	<summary>
+  Looks up a localized string similar to : ulaza.
+</summary>
+</member><member name="P:Farma.My.Resources.Resources.text_specifikacije">
+	<summary>
+  Looks up a localized string similar to : specifikacije.
+</summary>
+</member><member name="P:Farma.My.Resources.Resources.text_tebovanje">
+	<summary>
+  Looks up a localized string similar to : trebovanje.
+</summary>
+</member><member name="P:Farma.My.Resources.Resources.text_upit_storno">
+	<summary>
+  Looks up a localized string similar to Da li ste sigurni da želite da izvršite storniranje? Nakon ove operacije nalog će biti proknjižen i zaključan..
+</summary>
+</member><member name="T:Farma.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="P:Farma.clsRobno.KonamdTekst">
+</member><member name="P:Farma.clsRobno.Broj_kolona">
+</member><member name="P:Farma.clsRobno.dokumenta_sifra">
+server
+
+</member>
+</members>
+</doc>

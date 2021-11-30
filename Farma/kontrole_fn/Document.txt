@@ -1,0 +1,7 @@
+1. UNOS NOVOG NALOGA
+	- potrebno izabrati vrstu naloga (pocetno stanje, racuni, izvodi,...)
+	- broj naloga se dodeljuje automatski, stim da prati red.br. po svakoj grupi (AM-001, AM-002, BR-001,...)
+	- konto se unosi rucno stim da program proverava:
+		- ispravnost unesenih cifara,
+		- dali je dozvoljeno knjizenje ili ne, 
+		- dali ima analitiku ili ne,

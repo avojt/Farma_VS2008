@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xml>
+  <settings>
+    <CNNString>Data Source=.\SQLEXPRESS;Initial Catalog=farma;Integrated Security=SSPI;Persist Security Info=False</CNNString>
+    <PrnString>E:\projekti\Farma\Farma\bin\Debug\izvestaji</PrnString>
+  </settings>
+</xml>
